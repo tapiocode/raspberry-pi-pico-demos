@@ -45,9 +45,7 @@ Select a demo you want to try out. Then:
 
 The demo uses 10 leds to cycle through four different sequences in order.
 
-**Video clip**
-
-[![Watch the video](led-array-sweeper-v.jpg)](./led-array-sweeper-v.mp4)
+<img src="led-array-sweeper.gif" />
 
 [See full size photo](led-array-sweeper-breadboard-photo.jpg)
 
@@ -121,9 +119,7 @@ It should be easy to use the class already as it is for real projects. However, 
 
 The demo turns the needle to briefly point at marked values one at a time, then retuns back and starts over.
 
-**Video clip**
-
-[![Watch the video](analog-radial-gauge-v.jpg)](./analog-radial-gauge-v.mp4)
+<img src="analog-radial-gauge.gif" />
 
 [See full size photo](analog-radial-gauge-breadboard-photo.jpg)
 

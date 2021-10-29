@@ -6,6 +6,7 @@ The demos:
 1. [Led Array Sweeper](#led-array-sweeper) – Create dynamic visual effects using an array of LEDs
 1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module
 1. [Analog Radial Gauge](#analog-radial-gauge) – Indicate a reading by turning a needle attached to a stepper motor
+1. [Digital Rotary Counter](#digital-rotary-counter) – Cycle through numbers on a digital rotary counter
 
 ### How To Run
 
@@ -149,6 +150,48 @@ In the demo the zero is wherever the needle points at in the beginning of execut
 
 * In various sensor data projects, replace your boring old LCD displays with crude but stylish "analog" contraptions
 * Evolve the demo into a sauna thermometer. For this, you may want to look into 1-wire digital thermometers such as DS18B20
+
+---
+
+### Digital Rotary Counter
+
+The demo rotates through a programmed sequence of numbers. This demo uses an SBC-OLED01 display, but it should also work with other devices compatible with [the SSD1306 driver](digital-rotary-counter/ssd1306.py) (copied from the MicroPython project).
+
+<img src="digital-rotary-counter.gif" />
+
+[See full size photo](digital-rotary-counter-breadboard-photo.jpg)
+
+Component | Used in the demo
+-- | --
+SBC-OLED01 display | 1
+Wires | 4 × male/male
+
+Wiring configuration:
+Display | Pico
+-- | -
+SCL | GP16
+SDA | GP17
+Power | 3V3 (OUT) (Pin 36)
+Ground | GND (Pin 38)
+
+#### The Numbers
+
+The numbers seen on the display were built from [Binary (raw) 1-bit PBM](https://en.wikipedia.org/wiki/Netpbm) picture data, which was compiled into a source file, see [numbers.py](digital-rotary-counter/numbers.py).
+
+If you want to create your own numbers, you can use a free image editor [GIMP](https://www.gimp.org/), for example, to work on the files. You need to create a file for each number (10 in total), then use the script (see below) to compile the data.
+
+In GIMP, when you have prepared your single number image, downgrade the palette by using **Image** → **Mode** → **Indexed…**, and select the 1-bit option. It may take a few attempts but when you're happy with the result, select **Export…**, use the suffix `.pbm`, and hit **Export**. When prompted, select Data formatting: **Raw** (not ASCII).
+
+For reference, the demo directory contains:
+* A helper script [create_bytearrays_from_glyphs.py](digital-rotary-counter/create_bytearrays_from_glyphs.py) for compiling
+* The `numbers/0..9.pbm` files used in the demo
+* The GIMP image [numbers/numbers_w20_h30.xcf](digital-rotary-counter/numbers/numbers_w20_h30.xcf) which is the source of the number files
+
+#### Ideas
+
+* By adding buttons **RESET** and **+1**, you could actually make real use of this project in some situations
+* Adjust the speeds and rotation sequence to build a nailbiter lottery machine (again, do use buttons liberally)
+* You can actually fit a sixth digit in there by changing the parameters in `demo.py`, and if that's not enough just build a smaller set of numbers (see instructions above)
 
 # License
 

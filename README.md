@@ -7,7 +7,15 @@ The demos:
 1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module
 1. [Analog Radial Gauge](#analog-radial-gauge) – Indicate a reading by turning a needle attached to a stepper motor
 
-## Project Information
+### How To Run
+
+First, pick a demo. Then:
+1. Build the project using the suggested components, or whatever parts you have at hand
+1. Examine the scripts (`demo.py` in particular) and evaluate whether they require altering in order to run properly
+1. Upload **all necessary files** from inside the demo directory **to the root directory** of the Pico
+1. Run `demo.py`, which is the main file for each demo
+
+## About The Demos
 
 The demos are written in [MicroPython](https://docs.micropython.org/en/latest/index.html) 1.17. For downloads and information, see:
 * MicroPython firmware: https://micropython.org/download/rp2-pico/
@@ -28,14 +36,6 @@ The following items are common for all of the demos:
 * One Raspberry Pi Pico
 * A cable for communicating with Pico (typically Micro-USB)
 * A breadboard
-
-### Running The Demos
-
-Select a demo you want to try out. Then:
-1. Build the project using the suggested components, or whatever you have at hand
-1. Examine the scripts (`demo.py` in particular) and evaluate whether they require altering in order to run properly
-1. Upload **all files** from inside the demo directory **to the root directory** of the Pico
-1. Run `demo.py`, which is the main file for each demo
 
 ---
 

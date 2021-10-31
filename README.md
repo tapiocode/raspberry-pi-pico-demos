@@ -3,7 +3,7 @@
 A collection of past beginner level Raspberry Pi Pico demos. Some experience with setting up electronics projects and understanding of programming concepts is assumed.
 
 The demos:
-1. [Led Array Sweeper](#led-array-sweeper) – Create dynamic visual effects using an array of LEDs\
+1. [LED Array Sweeper](#led-array-sweeper) – Create dynamic visual effects using an array of LEDs\
     <img src="led-array-sweeper.gif" />
 
 1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module\
@@ -49,9 +49,9 @@ The following items are common for all of the demos:
 
 ## Demos
 
-### Led Array Sweeper
+### LED Array Sweeper
 
-The demo uses 10 leds to cycle through four different sequences in order.
+The demo uses 10 LEDs to cycle through four different sequences in order.
 
 <img src="led-array-sweeper.gif" />
 

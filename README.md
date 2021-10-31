@@ -15,6 +15,9 @@ The demos:
 1. [Digital Rotary Counter](#digital-rotary-counter) – Cycle through numbers on a digital rotary counter\
     <img src="digital-rotary-counter.gif" />
 
+1. [RGB LED Flame](#rgb-led-flame) – Fire up an RGB LED with a cozy flickering flame effect\
+    <img src="rgb-led-flame.gif" />
+
 ### How To Run
 
 First, pick a demo. Then:
@@ -199,6 +202,40 @@ For reference, the demo directory contains:
 * By adding buttons **RESET** and **+1**, you could actually make real use of this project in some situations
 * Adjust the speeds and rotation sequence to build a nailbiter lottery machine (again, do use buttons liberally)
 * You can actually fit a sixth digit in there by changing the parameters in `demo.py`, and if that's not enough just build a smaller set of numbers (see instructions above)
+
+---
+
+### RGB LED Flame
+
+<img src="rgb-led-flame.gif" />
+
+[See full size photo](rgb-led-flame-breadboard-photo.jpg)
+
+**Don't have an RGB LED?** Just use a regular LED in GP18 to experience the flickering effect.
+
+Component | Used in the demo
+-- | --
+Common Cathode RGB LED | 1
+Resistors  | 3 × 330 Ω
+Wires | 4 × male/male
+
+Wiring configuration:
+LED | Pico
+-- | -
+Red | GP18 (with resistor)
+Ground (longest leg) | GND (Pin 18)
+Green | GP17 (with resistor)
+Blue | GP16 (with resistor)
+
+In this demo, the RGB LED is covered with a small piece of plastic foam to diffuse the colors. You can achieve similar (or even much better) results by using some other materials and methods.
+
+When run, the script creates a lengthy sequence of random values that's used to change the light intensity over time, which creates the flickering effect. The sequence is different every time the script is run, and repeats indefinitely.
+
+#### Ideas
+
+* Should be straightforward to use as a safe replacement for an actual candle
+* Add a button to ignite and smother the flame with a smooth effect
+* Add a potentiometer "gas valve" to adjust the brightness
 
 # License
 

@@ -3,10 +3,17 @@
 A collection of past beginner level Raspberry Pi Pico demos. Some experience with setting up electronics projects and understanding of programming concepts is assumed.
 
 The demos:
-1. [Led Array Sweeper](#led-array-sweeper) – Create dynamic visual effects using an array of LEDs
-1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module
-1. [Analog Radial Gauge](#analog-radial-gauge) – Indicate a reading by turning a needle attached to a stepper motor
-1. [Digital Rotary Counter](#digital-rotary-counter) – Cycle through numbers on a digital rotary counter
+1. [Led Array Sweeper](#led-array-sweeper) – Create dynamic visual effects using an array of LEDs\
+    <img src="led-array-sweeper.gif" />
+
+1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module\
+    <img src="wifi-ping-over-http-breadboard-photo.jpg" width="240">
+
+1. [Analog Radial Gauge](#analog-radial-gauge) – Indicate a reading by turning a needle attached to a stepper motor\
+    <img src="analog-radial-gauge.gif" />
+
+1. [Digital Rotary Counter](#digital-rotary-counter) – Cycle through numbers on a digital rotary counter\
+    <img src="digital-rotary-counter.gif" />
 
 ### How To Run
 

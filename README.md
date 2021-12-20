@@ -58,22 +58,18 @@ The demo uses 10 LEDs to cycle through four different sequences in order.
 
 <img src="led-array-sweeper.gif" />
 
-[See full size photo](led-array-sweeper-breadboard-photo.jpg)
+[<img src="led-array-sweeper.png" width="400"><br/>Click for full size](led-array-sweeper.png)
 
 Component | Used in the demo
 -- | --
-Resistors  | 10 × 1k Ω
-LEDs  | 10 × 3 mm, red
-Wires  | 11 × male/male
+LEDs  | 10 (regular 5 mm, red)
+Wires  | 22 × male/male
 
-Smaller 3 mm LEDs were used so that all 10 of them could fit into the 0.1" spacing as pictured. Physically larger LEDs probably need some other configuration.
-
-In principle, the number of LEDs in this project is limited by the number of available GPIOs. The program logic should work with any reasonable number of LEDs but if you use just a few of them you may have to fine-tune the variables to produce satisfactory results.
-
-The setup for each LED:
+The setup in principle:
 * LED anode (long leg) connects to a GPIO
-* LED cathode (short leg) connects to a resistor
-* The resistor connects to grounded bus strip
+* LED cathode (short leg) connects to GND
+
+Basically, the number of LEDs in this project is limited by the number of available GPIOs. The program logic should work with any reasonable number of LEDs but if you use just a few of them you may have to fine-tune the variables to produce satisfactory results.
 
 In the example, the GPIOs are 16, 17, 18, 19, 20, 21, 22, 26, 27, and 28.
 

@@ -8,9 +8,9 @@ import time
 
 MAX_DUTY = 255
 
-GPIO_RED = 18
-GPIO_GREEN = 17
-GPIO_BLUE = 16
+GPIO_RED = 13
+GPIO_GREEN = 14
+GPIO_BLUE = 15
 
 # Setting up the LEDs using PWM, and balancing the LED outputs to emit orangish glow
 leds = [

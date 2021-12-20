@@ -201,9 +201,9 @@ For reference, the demo directory contains:
 
 <img src="rgb-led-flame.gif" />
 
-[See full size photo](rgb-led-flame-breadboard-photo.jpg)
+<img src="rgb-led-flame.png" />
 
-**Don't have an RGB LED?** Just use a regular LED in GP18 to experience the flickering effect.
+**Don't have an RGB LED?** You can use a regular LED in GP13 (red wire) to experience the flickering effect. In fact, you can simply use the Pico's integrated led by changing the value of `GPIO_RED` to `25` on the line 11 in `demo.py`.
 
 Component | Used in the demo
 -- | --
@@ -214,10 +214,10 @@ Wires | 4 × male/male
 Wiring configuration:
 LED | Pico
 -- | -
-Red | GP18 (with resistor)
+Red | GP13 (with resistor)
 Ground (longest leg) | GND (Pin 18)
-Green | GP17 (with resistor)
-Blue | GP16 (with resistor)
+Green | GP14 (with resistor)
+Blue | GP15 (with resistor)
 
 In this demo, the RGB LED is covered with a small piece of plastic foam to diffuse the colors. You can achieve similar (or even much better) results by using some other materials and methods.
 

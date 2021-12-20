@@ -159,9 +159,9 @@ In the demo the zero is wherever the needle points at in the beginning of execut
 
 The demo rotates through a programmed sequence of numbers. This demo uses an SBC-OLED01 display, but it should also work with other devices compatible with [the SSD1306 driver](digital-rotary-counter/ssd1306.py) (copied from the MicroPython project).
 
-<img src="digital-rotary-counter.gif" />
+<img src="digital-rotary-counter.gif" /> [<img src="digital-rotary-counter.jpg" width="240">](digital-rotary-counter.jpg)
 
-[See full size photo](digital-rotary-counter-breadboard-photo.jpg)
+<img src="digital-rotary-counter.png" />
 
 Component | Used in the demo
 -- | --
@@ -173,8 +173,8 @@ Display | Pico
 -- | -
 SCL | GP16
 SDA | GP17
-Power | 3V3 (OUT) (Pin 36)
-Ground | GND (Pin 38)
+V<sub>cc</sub> | 3V3 (OUT) (Pin 36)
+GND | GND (Pin 38)
 
 #### The Numbers
 

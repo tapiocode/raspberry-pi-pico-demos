@@ -6,8 +6,7 @@ The demos:
 1. [LED Array Sweeper](#led-array-sweeper) – Create dynamic visual effects using an array of LEDs\
     <img src="led-array-sweeper.gif" />
 
-1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module\
-    <img src="wifi-ping-over-http-breadboard-photo.jpg" width="240">
+1. [WiFi Ping-Over-HTTP](#wifi-ping-over-http) – Send HTTP requests over the Internet by using a transceiver module
 
 1. [Analog Radial Gauge](#analog-radial-gauge) – Indicate a reading by turning a needle attached to a stepper motor\
     <img src="analog-radial-gauge.gif" />
@@ -87,26 +86,23 @@ Pin 18 (GND) grounds the bus strip.
 
 The demo executes a simple HTTP GET request to a server over the Internet, then prints out details of the response.
 
-<img src="wifi-ping-over-http-breadboard-photo.jpg" width="320">
-
-[See full size photo](wifi-ping-over-http-breadboard-photo.jpg)
+[<img src="wifi-ping-over-http.png" width="400"><br/>Click for full size](wifi-ping-over-http.png)
 
 Component | Used in the demo
 -- | --
-ESP8266 Transceiver Module | 1
-Wires  | 5 × male/female, 2 × male/male
+Serial WiFi Transceiver Module ESP8266-01 | 1
+Wires  | 5 × male/female
 
 Wiring configuration:
 Transceiver | Pico
 -- | -
 UTXD | UART0 TX (Pin 1)
 URXD | UART0 RX (Pin 2)
-Power | 3V3 (OUT) (Pin 36)
-Ground | GND (Pin 38)
+V<sub>cc</sub> | 3V3 (OUT) (Pin 36)
+CH_PD | 3V3 (OUT) (Pin 36)
+GND | GND (Pin 38)
 
-The demo uses Serial WiFi Transceiver Module ESP8266.
-
-Product wiki page: https://www.elecrow.com/wiki/index.php?title=Serial_WIFI_Transceiver_Module_ESP8266
+For more information, see the manufacturer's wiki page: https://www.elecrow.com/wiki/index.php?title=Serial_WIFI_Transceiver_Module_ESP8266
 
 #### Program Code
 
